@@ -1,16 +1,83 @@
-# React + Vite
+📝 Paste App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern paste management web application built with React, Redux Toolkit, and Tailwind CSS.
+It allows users to create, edit, search, copy, delete, and share text pastes with persistent storage using localStorage.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features:-
+✏️ Create new pastes
+🔄 Edit existing pastes
+🗑️ Delete pastes
+🔍 Search pastes by title (real-time)
+📋 Copy paste content to clipboard
+🔗 Share paste using native browser share (with fallback)
+💾 Persistent storage using localStorage
+📱 Responsive and clean UI
+🔔 Toast notifications for user actions
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack:-
+Frontend: React
+State Management: Redux Toolkit
+Routing: React Router
+Styling: Tailwind CSS
+Notifications: react-hot-toast
+Icons: react-icons / lucide-react
+Storage: Browser localStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+Project Structure:-
+src/
+├── components/
+│   ├── Home.jsx
+│   ├── Paste.jsx
+│   ├── ViewPastes.jsx
+│   └── Navbar.jsx
+├── redux/
+│   └── pasteSlice.js
+├── store.js
+├── App.jsx
+└── main.jsx
+
+
+⚙️ Installation & Setup:-
+Clone the repository
+git clone https://github.com/your-username/paste-app.git
+
+Navigate to the project folder
+cd paste-app
+
+Install dependencies
+npm install
+
+Run the app
+npm run dev
+
+The app will run at:
+http://localhost:5173
+
+
+🧠 How It Works:-
+Redux Toolkit manages all paste data globally.
+Pastes are stored in localStorage to persist data after refresh.
+useSearchParams is used for edit mode.
+useParams is used to view individual pastes.
+UI updates automatically on state changes.
+
+
+📌 Future Enhancements:-
+🔐 User authentication
+☁️ Cloud database support
+🏷️ Tags for pastes
+🌙 Dark mode
+📄 Export pastes as files
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repository and submit a pull request.
+
+GitHub: Mahindra021
+
+⭐ If you like this project, don’t forget to star the repository!
