@@ -44,7 +44,7 @@ src/
 
 ⚙️ Installation & Setup:-
 Clone the repository
-git clone https://github.com/your-username/paste-app.git
+git clone https://github.com/Mahindra021/paste-app.git
 
 Navigate to the project folder
 cd paste-app
