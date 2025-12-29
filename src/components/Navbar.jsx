@@ -2,7 +2,9 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
+
     <div className='flex flex-row p-3 gap-3 place-content-end font-bold'>
+
         <NavLink to="/">
             Home
         </NavLink>
@@ -10,7 +12,9 @@ const Navbar = () => {
         <NavLink to="/paste">
             Paste
         </NavLink>
+        
     </div>
+
   )
 }
 

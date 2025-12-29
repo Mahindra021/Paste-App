@@ -14,8 +14,11 @@ const ViewPastes = () => {
     return <div>Paste not found</div>;
 
   return (
+
     <div>
+
       <div className='flex flex-row mt-3 gap-5 place-content-between'>
+
         <input 
           className='p-2 rounded-md w-[500px]'
           type='text'
@@ -31,9 +34,11 @@ const ViewPastes = () => {
               }}>
               <FiCopy />
           </button>
+
       </div>
 
       <div className='mt-3'>
+
         <textarea
           className='w-[700px] h-screen p-2 rounded-md'
           type='text'
@@ -41,15 +46,11 @@ const ViewPastes = () => {
           disabled
         >
         </textarea>
+
       </div>
+      
     </div>
   )
 }
 
 export default ViewPastes
-
-
-
-// Hook	Used for
-// useParams()	Reading URL path parameters
-// useSearchParams()	Reading & updating query (search) parameters

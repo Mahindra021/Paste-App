@@ -37,29 +37,12 @@ function App() {
   )  
 
   return (
+
     <div>
       <RouterProvider router={router}/>
     </div>
+    
   )
 }
 
 export default App
-
-
-
-// createBrowserRouter ✅
-// New data router API (React Router v6.4+).
-// Used to define routes as a JavaScript object/array.
-// RouterProvider ✅
-// Provides the router configuration to the entire app.
-// Similar to how Provider works in Redux.
-
-
-
-// :id → dynamic URL parameter
-// Examples:
-// /pastes/1
-// /pastes/abc123
-// Inside ViewPastes, you can access id using:
-// import { useParams } from 'react-router-dom'
-// const { id } = useParams()
